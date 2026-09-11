@@ -25,7 +25,7 @@ def generate_random_string(length):
     
     return letters
 
-def value_counts_fast(max_length):
+def value_counts(max_length):
     letters = generate_random_string(max_length)
     
     v_count = 0
@@ -57,4 +57,4 @@ def plot_proportions(df_counts):
     plt.grid()
     plt.show()
 
-plot_proportions(value_counts_fast(100000))
+plot_proportions(value_counts(100000))
